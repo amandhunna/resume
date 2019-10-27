@@ -1,0 +1,371 @@
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-overflow: nowrap;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .objective {
+            margin: 1%;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+
+        body {
+            background-color: #fff;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .left {
+            background: #3F3F3F;
+            color: #fff;
+        }
+
+        h1 {
+            color: #629BB8;
+            padding: 0;
+            margin: 0;
+            font-size: 4rem;
+        }
+
+        .left-header {
+            border-bottom: solid #fff;
+            border-top: #fff solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .left-header~p {
+            margin: 6%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0 1%;
+        }
+
+        .right {
+            padding: 1%;
+        }
+
+        header {
+            margin: 0% 0% 4% 4%;
+        }
+
+        .spread {
+            display: flex;
+            padding: 1%;
+        }
+
+        .spread>p {
+            margin: 1%;
+        }
+
+        span {
+            padding-left: 1%;
+            white-space: nowrap;
+        }
+
+        h1+h3 {
+            letter-spacing: 5px;
+            margin: 0;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        h4:after {
+            content: '';
+            display: inline-block;
+            height: 0.5em;
+            vertical-align: bottom;
+            width: 100%;
+            margin-right: -100%;
+            margin-left: 10px;
+            border-top: 1px solid black;
+        }
+
+        .right>div {
+            margin: 0 0 4% 0;
+        }
+
+        .profileImage {
+            display: flex;
+        }
+
+        .profileImage>img {
+            border-radius: 50%;
+            width: 10rem;
+            border-radius: 50%;
+            display: block;
+            margin: 10% auto;
+            width: 50%;
+        }
+
+        .period {
+            flex-basis: 20%;
+        }
+
+        .radio>ul {
+            margin: 2% 2% 2% 10%;
+        }
+
+        li {
+            padding: 1%;
+        }
+
+        .qrCode>img {
+            width: 14rem;
+            display: block;
+            margin: auto;
+            margin-bottom: 6%;
+        }
+        .skillSet {
+            display: flex;
+            justify-content: space-around;
+        }
+        .skillSet>p{
+            border: 2px solid black;
+            padding: 1% 4%;
+        }
+
+        @media print {
+
+      }
+    </style>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class='main'>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class='hide'>&#9776; open</span>
+        <div id="myNav" class="overlay hide">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class='left'>
+            <div class='profileImage'>
+                <img src='./profileImage.jpeg'>
+            </div>
+            <div>
+                <p class='left-header'>Personal Information</p>
+                <p><strong>D.O.B:</strong> <span>October 05,1995 </span></p>
+                <p><strong>Known Languages:</strong><span>English, Hindi and Punjabi</span></p>
+            </div>
+            <div>
+                <p class='left-header'>Contact</p>
+                <p><strong>Phone:</strong><span>+91 7042-458-977</span></p>
+                <p><strong>Mail:</strong><span>amanjotsingh260@gmail.com</span></p>
+            </div>
+            <div>
+                <p class='left-header'>HOBBIES</p>
+                <p>Spending time with family and friends</p>
+            </div>
+            <div>
+                <p class='left-header'>Area, Nationality</p>
+                <p>New Delhi, Delhi, India</p>
+            </div>
+            <div>
+                <p class='left-header'>SOCIAL MEDIA/WORK SAMPLES</p>
+                <p><strong>Github:</strong><span>github.com/amanjotsinghdhunna</span></p>
+                <p><strong>LinkedIn:</strong><span>linkedin.com/in/amanjot-singh-398731131</span></p>
+                <p>or</p>
+                <p>scan the below code</p>
+            </div>
+            <div class='qrCode'>
+                <img src='./linkdnqr.png'>
+            </div>
+        </div>
+        <div class='right'>
+            <header>
+                <h1>AMANJOT SINGH</h1>
+                <h3>Associate Software Engineer</h3>
+            </header>
+            <div>
+                <h4>OBJECTIVE</h4>
+                <p class='objective'>Work for continuous growth and learning</p>
+            </div>
+            <div>
+                <h4>WORK EXPERIENCE</h4>
+                <div>
+                    <div class='spread'>
+                        <p class='period'>July 2018 - Present</p>
+                        <p>Working with NodeXperts as an Associate software engineer</p>
+                    </div>
+                    <div class='spread'>
+                        <p class='period'>2017 ( JUL - OCT)</p>
+                        <p>Radical Robots Pvt. Ltd Application development/software maintenance</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4>EDUCATION</h4>
+                <div class='spread'>
+                    <p class='period'>2014 - 2018</p>
+                    <div class='flex-column'>
+                        <p>Bachelor of Technology (B.Tech) in Information Technology from Guru Tegh
+                            Bahadur Institute of
+                            Technology</p>
+                        <p>Percentage: 72%</p>
+
+                    </div>
+                </div>
+                <div class='spread'>
+                    <p class='period'>2012 - 2013</p>
+                    <div class='flex-column'>
+                        <p>XII (Senior Secondary), CBSE Board (Guru Harkrishan Public School)</p>
+                        <p>Percentage: 65.80%</p>
+                    </div>
+                </div>
+                <div class='spread'>
+                    <p class='period'>2010 - 2011</p>
+                    <div class='flex-column'>
+                        <p>X (Secondary), CBSE Board (Guru Harkrishan Public School)</p>
+                        <p>Percentage: 72.20%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h4>SKILLS</h4>
+                <div class='spread skillSet'>
+                    <p>Node</p>
+                    <p>React</p>
+                    <p>MongoDB</p>
+                    <p>Meteor</p>
+                    <p>Blaze</p>
+                    <p>Git</p>
+                </div>
+            </div>
+            <div>
+                <h4>PROJECTS</h4>
+                <div class='radio'>
+                    <ul>
+                        <li>COMPANY MANAGEMENT:
+                            This project is developed using java (javafx) programming
+                            language to demonstrate the use of programming
+                            paradigms.</li>
+                        <li>IOT- Internet of Things:
+                            The project is built to learn key concepts of IoT and data
+                            visualization and to collect data from environment and
+                            controlling hardware.</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h4>TRAININGS/CERTIFICATIONS</h4>
+                <div class='radio'>
+                    <ul>
+                        <li>Done IOT training from Delhi Technological University.</li>
+                        <li>Done Java training from HCL CDC.</li>
+                        <li>Done Cloud Computing from HP.</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h4>ACHIEVEMENTS</h4>
+                <div class='radio'>
+                    <ul>
+                        <li>Achieved 95.15% competitive profile at HackerEarth in
+                            java programming.</li>
+                        <li>Silver medalist at SoloLearn</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
