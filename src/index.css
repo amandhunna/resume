@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-overflow: nowrap;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+.objective {
+  margin: 1%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.main {
+  display: flex;
+}
+
+.left {
+  background: #3F3F3F;
+  color: #fff;
+  flex-basis: 40%;
+  padding-top: 3%;
+}
+
+h1 {
+  color: #629BB8;
+  padding: 0;
+  margin: 0;
+  font-size: 4rem;
+}
+
+.left-header {
+  border-bottom: solid #fff;
+  border-top: #fff solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2%;
+}
+
+.left-header~p {
+  margin: 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 1%;
+}
+
+.left>div {
+  margin-bottom: 15%;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+a {
+  color: #fff;
+}
+
+.right {
+  padding: 5% 1% 1% 1%;
+}
+
+header {
+  margin: 0% 0% 4% 4%;
+}
+
+.spread {
+  display: flex;
+  padding: 1%;
+}
+
+.spread>p {
+  margin: 1%;
+}
+
+span {
+  padding-left: 1%;
+  white-space: nowrap;
+}
+
+h1+h3 {
+  letter-spacing: 5px;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+h4:after {
+  content: '';
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid black;
+}
+
+.right>div {
+  margin: 0 0 4% 0;
+}
+
+.profileImage {
+  display: flex;
+}
+
+.profileImage>img {
+  border-radius: 50%;
+  width: 10rem;
+  border-radius: 50%;
+  display: block;
+  margin: 10% auto;
+  width: 60%;
+}
+
+.period {
+  flex-basis: 20%;
+}
+
+.radio>ul {
+  margin: 2% 2% 2% 10%;
+}
+
+li {
+  padding: 1%;
+}
+
+.qrCode>img {
+  width: 12rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 6%;
+}
+
+.skillSet {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skillSet>p {
+  border: 2px solid black;
+  padding: 1% 4%;
+}
+
+.goGreen {
+  display: none;
+}
+
+@media print {
+  .left {
+      flex-basis: 50%;
+  }
+
+  .goGreen {
+      display: flex;
+  }
+
+  footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 2.5rem;
+      background-color: green;
+      display: flex;
+  }
+
+  footer>p {
+      margin: auto;
+      color:#fff;
+  }
+}
