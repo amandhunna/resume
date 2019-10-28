@@ -154,7 +154,7 @@
         }
 
         .qrCode>img {
-            width: 14rem;
+            width: 12rem;
             display: block;
             margin: auto;
             margin-bottom: 6%;
@@ -170,9 +170,31 @@
             padding: 1% 4%;
         }
 
+        .goGreen {
+            display: none;
+        }
+
         @media print {
             .left {
                 flex-basis: 50%;
+            }
+
+            .goGreen {
+                display: flex;
+            }
+
+            footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 2.5rem;
+                background-color: green;
+                display: flex;
+            }
+
+            footer>p {
+                margin: auto;
+                color:#fff;
             }
         }
     </style>
@@ -196,7 +218,8 @@
                             href="mailto:amanjotsingh260@gmail.com">amanjotsingh260@gmail.com</a></span></p>
             </div>
             <div>
-                <p class='left-header'>HOBBIES</p>
+                <p class='left-header'>ACTIVITIES/HOBBIES</p>
+                <p>Attending tech talks</p>
                 <p>Spending time with family and friends</p>
             </div>
             <div>
@@ -331,6 +354,11 @@
             </div>
         </div>
     </div>
+    <footer class='goGreen'>
+        <p>Please visit <a href="https://amanjotsinghdhunna.github.io/profileintro/">
+                 https://amanjotsinghdhunna.github.io/profileintro/ </a>to get copy of this resume.
+            #SAVEPAPER#GOGREEN</p>
+    </footer>
 </body>
 
 </html>
