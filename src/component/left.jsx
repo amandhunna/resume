@@ -1,5 +1,61 @@
 import React from "react";
 
+const data = {
+  personalInfo: {
+    className:"left-header",
+    title: "Personal Information",
+    detailedList: [
+      { type: "D.O.B.:", info: "October 05, 1995" },
+      { type: "Known Languages:", info: "English, Hindi and Punjabi" }
+    ]
+  },
+  contact: {
+    className:"left-header",
+    title: "Contact",
+    detailedList: [
+      { type: "Phone:", info: "+91 7042-458-977" },
+      {
+        type: "Mail:",
+        link: "mailto:amanjotsingh260@gmail.com",
+        info: "amanjotsingh260@gmail.com"
+      }
+    ]
+  },
+  activitiesAndHobbies: {
+    className:"left-header",
+    title: "ACTIVITIES/HOBBIES",
+    list: ["Attending tech talks.", "Spending time with family and friends."]
+  },
+  home: {
+    className:"left-header",
+    listClass:"left-header",
+    title: "Area, Nationality",
+    list: ["New Delhi, Delhi, India"]
+  },
+  workSample: {
+    title: "WORK SAMPLES",
+    detailedList: [
+      {
+        className: "clickable",
+        info: "amanjotsinghdhunna",
+        type: "Github:",
+        onClick: () => window.open("https://github.com/amanjotsinghdhunna")
+      }
+    ]
+  },
+  socialMedia: {
+    title: "SOCIAL MEDIA",
+    detailedList: [
+      {
+        className: "clickable",
+        info: "LinkedIn:",
+        type: "amanjot-singh-398731131:",
+        onClick: () =>
+          window.open("https://linkedin.com/in/amanjot-singh-398731131")
+      }
+    ]
+  }
+};
 export default function Left() {
   return (
     <div className="left">
