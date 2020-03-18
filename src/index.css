@@ -4,10 +4,6 @@
   text-overflow: nowrap;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .flex {
   display: flex;
 }
@@ -26,10 +22,7 @@ body {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-}
-
-body {
+  font-family: "Lato", sans-serif;
   background-color: #fff;
 }
 
@@ -38,14 +31,14 @@ body {
 }
 
 .left {
-  background: #3F3F3F;
+  background: #3f3f3f;
   color: #fff;
-  flex-basis: 40%;
+  flex-basis: 30%;
   padding-top: 3%;
 }
 
 h1 {
-  color: #629BB8;
+  color: #629bb8;
   padding: 0;
   margin: 0;
   font-size: 4rem;
@@ -60,7 +53,7 @@ h1 {
   padding: 2%;
 }
 
-.left-header~p {
+.left-header ~ p {
   margin: 6%;
   display: flex;
   flex-direction: row;
@@ -68,7 +61,7 @@ h1 {
   padding: 0 1%;
 }
 
-.left>div {
+.left > div {
   margin-bottom: 15%;
 }
 
@@ -82,6 +75,7 @@ a {
 
 .right {
   padding: 5% 1% 1% 1%;
+  flex-basis: 60%;
 }
 
 header {
@@ -93,7 +87,7 @@ header {
   padding: 1%;
 }
 
-.spread>p {
+.spread > p {
   margin: 1%;
 }
 
@@ -102,7 +96,7 @@ span {
   white-space: nowrap;
 }
 
-h1+h3 {
+h1 + h3 {
   letter-spacing: 5px;
   margin: 0;
   font-size: 0.9rem;
@@ -110,17 +104,17 @@ h1+h3 {
 }
 
 h4:after {
-  content: '';
+  content: "";
   display: inline-block;
   height: 0.5em;
   vertical-align: bottom;
-  width: 100%;
+  width: 250px;
   margin-right: -100%;
   margin-left: 10px;
   border-top: 1px solid black;
 }
 
-.right>div {
+.right > div {
   margin: 0 0 4% 0;
 }
 
@@ -128,7 +122,7 @@ h4:after {
   display: flex;
 }
 
-.profileImage>img {
+.profileImage > img {
   border-radius: 50%;
   width: 10rem;
   border-radius: 50%;
@@ -141,7 +135,7 @@ h4:after {
   flex-basis: 20%;
 }
 
-.radio>ul {
+.radio > ul {
   margin: 2% 2% 2% 10%;
 }
 
@@ -149,7 +143,7 @@ li {
   padding: 1%;
 }
 
-.qrCode>img {
+.qrCode > img {
   width: 12rem;
   display: block;
   margin: auto;
@@ -158,12 +152,13 @@ li {
 
 .skillSet {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.skillSet>p {
+.skillSet > span {
   border: 2px solid black;
-  padding: 1% 4%;
+  padding: 1% 2%;
+  margin: 1%;
 }
 
 .goGreen {
@@ -171,25 +166,35 @@ li {
 }
 
 @media print {
+  body {
+    transform: scale(1);
+  }
+  header {
+    margin: 0% 0% 1% 1%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
   .left {
-      flex-basis: 50%;
+    flex-basis: 30%;
   }
 
   .goGreen {
-      display: flex;
+    display: flex;
   }
 
   footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 2.5rem;
-      background-color: green;
-      display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: green;
+    display: flex;
   }
 
-  footer>p {
-      margin: auto;
-      color:#fff;
+  footer > p {
+    margin: auto;
+    color: #fff;
   }
 }

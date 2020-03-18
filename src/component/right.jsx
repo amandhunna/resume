@@ -11,7 +11,8 @@ const data = {
     org: [
       {
         period: "July 2018 - Present",
-        title: "Working with NodeXperts as an Associate software engineer",
+        title:
+          "Working with Successive Technologies as an Associate software engineer",
         responsibilities: [
           "Handle front-end and backend of the apps",
           "Discuss and suggest the required changes",
@@ -59,18 +60,33 @@ const data = {
   },
   skills: {
     title: "SKILLS",
-    skillSet: ["Node", "React", "MongoDB", "Meteor", "Blaze", "Git"]
+    skillSet: [
+      "Node",
+      "React",
+      "MongoDB",
+      "Meteor",
+      "Apollo",
+      "Git",
+      "using multiple util libraries",
+      "aws lambda"
+    ]
   },
   project: {
     title: "PROJECTS",
     list: [
+      "Express: Building the backend of the chat app using express and mongodb",
+      "Chat-frontend: Developed a fronted of the chat app and used cometchat-pro for the chat services",
+      "profileintro: Using this I have created this resume. It uses pure html and css. Also implemented this using react",
+      "React-demo: Developed a demo app to learn and hands on practice of react basics",
+      "Score-keeper: Developed this application using meteor (a js full stack framework) and used mongodb for the db",
       "COMPANY MANAGEMENT: This project is developed using java (javafx) programming language to demonstrate the use of programming paradigms.",
-      "IOT- Internet of Things: The project is built to learn key concepts of IoT and data visualization and to collect data from environment and controlling hardware."
+      "Arduino: The project is built to learn key concepts of IoT and data visualization and to collect data from environment and controlling hardware."
     ]
   },
   trainingAndCertificates: {
     title: "TRAININGS/CERTIFICATIONS",
     list: [
+      "Done master communication from Scientology",
       "Done IOT training from Delhi Technological University.",
       "Done Java training from HCL CDC.",
       "Done Cloud Computing from HP."
@@ -132,7 +148,7 @@ export default function right() {
         <h4>{data.skills.title}</h4>
         <div className="spread skillSet">
           {data.skills.skillSet.map(skillType => (
-            <p>{skillType}</p>
+            <span>{skillType}</span>
           ))}
         </div>
       </div>

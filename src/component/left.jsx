@@ -27,7 +27,7 @@ const data = [
     type: "activitiesAndHobbies",
     className: "left-header",
     title: "ACTIVITIES/HOBBIES",
-    list: ["Attending tech talks.", "Spending time with family and friends."]
+    list: ["Attending tech talks.", "Sharing coding content on instagram","Spending time with family and friends."]
   },
   {
     type: "home",
