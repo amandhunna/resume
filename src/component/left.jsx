@@ -4,6 +4,7 @@ const data = [
   {
     type: "personalInfo",
     className: "left-header",
+    dataClass: "left-content",
     title: "Personal Information",
     detailedList: [
       { type: "D.O.B.:", info: ["October 05, 1995"] },
@@ -13,6 +14,7 @@ const data = [
   {
     type: "contact",
     className: "left-header",
+    dataClass: "left-content",
     title: "Contact",
     detailedList: [
       { type: "Phone:", info: ["+91 7042-458-977"] },
@@ -26,19 +28,26 @@ const data = [
   {
     type: "activitiesAndHobbies",
     className: "left-header",
+    dataClass: "left-content",
     title: "ACTIVITIES/HOBBIES",
-    list: ["Attending tech talks.", "Sharing coding content on instagram","Spending time with family and friends."]
+    list: [
+      "Attending tech talks.",
+      "Sharing coding content on instagram",
+      "Spending time with family and friends."
+    ]
   },
   {
     type: "home",
     className: "left-header",
     listClass: "left-header",
+    dataClass: "left-content",
     title: "Area, Nationality",
     list: ["New Delhi, Delhi, India"]
   },
   {
     type: "workSample",
     className: "left-header",
+    dataClass: "left-content",
     title: "WORK SAMPLES",
     detailedList: [
       {
@@ -52,6 +61,7 @@ const data = [
   {
     type: "socialMedia",
     className: "left-header",
+    dataClass: "left-content",
     title: "SOCIAL MEDIA",
     detailedList: [
       {
@@ -76,22 +86,24 @@ export default function Left() {
       <div className="profileImage">
         <img src="./profileImage.jpeg" alt="" />
       </div>
-      {data.map(({ className, title, detailedList = [], list = [] }) => (
+      {data.map(({ className, dataClass,title, detailedList = [], list = [] }) => (
         <div>
           <p className={className}>{title}</p>
-          {detailedList.map(({ className, onClick = null, type, info }) => (
-            <p>
-              <strong>{type}</strong>
-              {info.map(item => (
-                <span
-                  className={className}
-                  onClick={() => onClick && onClick()}
-                >
-                  {item}
-                </span>
-              ))}
-            </p>
-          ))}
+          {detailedList.map(
+            ({ className, onClick = null, type, info }) => (
+              <p className={dataClass}>
+                <strong>{type}</strong>
+                {info.map(item => (
+                  <span
+                    className={className}
+                    onClick={() => onClick && onClick()}
+                  >
+                    {item}
+                  </span>
+                ))}
+              </p>
+            )
+          )}
           {list.map(item => (
             <p>{item}</p>
           ))}

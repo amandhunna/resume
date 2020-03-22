@@ -10,7 +10,7 @@ const data = {
     title: "WORK EXPERIENCE",
     org: [
       {
-        period: "July 2018 - Present",
+        period: "July 2018 - Present: Working with Successive Technologies as an Associate software engineer",
         title:
           "Working with Successive Technologies as an Associate software engineer",
         responsibilities: [
@@ -20,7 +20,7 @@ const data = {
         ]
       },
       {
-        period: "2017 ( JUL - OCT)",
+        period: "2017 ( JUL - OCT): Radical Robots Pvt. Ltd Application development/software maintenance",
         title:
           "Radical Robots Pvt. Ltd Application development/software        maintenance",
         responsibilities: [
@@ -76,10 +76,10 @@ const data = {
     list: [
       "Express: Building the backend of the chat app using express and mongodb",
       "Chat-frontend: Developed a fronted of the chat app and used cometchat-pro for the chat services",
-      "profileintro: Using this I have created this resume. It uses pure html and css. Also implemented this using react",
+      "ProfileIntro: Using this I have created this resume. It uses pure html and css. Also implemented this using react",
       "React-demo: Developed a demo app to learn and hands on practice of react basics",
       "Score-keeper: Developed this application using meteor (a js full stack framework) and used mongodb for the db",
-      "COMPANY MANAGEMENT: This project is developed using java (javafx) programming language to demonstrate the use of programming paradigms.",
+      "Company management: This project is developed using java (javafx) programming language to demonstrate the use of programming paradigms.",
       "Arduino: The project is built to learn key concepts of IoT and data visualization and to collect data from environment and controlling hardware."
     ]
   },
@@ -119,7 +119,7 @@ export default function right() {
             <div className="spread">
               <p className="period">{org.period}</p>
               <div>
-                <p>{org.title}</p>
+                {/* <p>{org.title}</p> */}
                 <ul>
                   {org.responsibilities.map(responsibility => (
                     <li>{responsibility}</li>
@@ -176,7 +176,7 @@ export default function right() {
         <h4>{data.achievement.title}</h4>
         <div className="radio">
           <ul>
-            {data.trainingAndCertificates.list.map(item => (
+            {data.achievement.list.map(item => (
               <li>{item}</li>
             ))}
           </ul>
