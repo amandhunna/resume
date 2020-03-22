@@ -165,6 +165,9 @@ footer > p {
   margin: auto;
   color: #fff;
 }
+.footer-visit {
+  display: none;
+}
 
 @media print {
   body {

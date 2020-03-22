@@ -118,7 +118,7 @@ export default function right() {
           {data.workEx.org.map(org => (
             <div className="spread">
               <p className="period">{org.period}</p>
-              <div>
+              <div className="radio">
                 {/* <p>{org.title}</p> */}
                 <ul>
                   {org.responsibilities.map(responsibility => (
