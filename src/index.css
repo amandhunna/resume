@@ -18,6 +18,10 @@
 }
 
 .objective {
+  margin: 6% 1% !important;
+}
+
+.objective > p {
   margin: 1%;
 }
 

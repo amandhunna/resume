@@ -1,12 +1,14 @@
 import React from "react";
 const data = {
   name: "AMANJOT SINGH",
-  position: "Associate Software Engineer/Full Stack Developer",
+  position: "Full Stack Developer",
   objective: {
+    className: "objective",
     title: "OBJECTIVE",
     objective: "Work for continuous growth and learning"
   },
   workEx: {
+    className: "workEx",
     title: "WORK EXPERIENCE",
     org: [
       {
@@ -110,9 +112,9 @@ export default function right() {
         <h1>{data.name}</h1>
         <h3>{data.position}</h3>
       </header>
-      <div>
+      <div className={data.objective.className}>
         <h4>{data.objective.title}</h4>
-        <p className="objective">{data.objective.objective}</p>
+        <p>{data.objective.objective}</p>
       </div>
       <div>
         <h4>{data.workEx.title}</h4>
@@ -134,16 +136,21 @@ export default function right() {
       </div>
       <div>
         <h4>{data.education.title}</h4>
-        {data.education.standard.map(standard => (
-          <div className="spread">
-            <p className="period">{standard.period}</p>
-            <div className="flex-column">
-              {standard.detail.map(detail => (
-                <p>{detail}</p>
-              ))}
-            </div>
-          </div>
-        ))}
+
+        <div className="radio">
+          <ul>
+            {data.education.standard.map(standard => (
+              <li className="spread">
+                <p className="period">{standard.period}</p>
+                <div className="flex-column">
+                  {standard.detail.map(detail => (
+                    <p>{detail}</p>
+                  ))}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
       <div>
