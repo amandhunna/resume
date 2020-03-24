@@ -60,7 +60,7 @@ const data = [
   },
   {
     type: "socialMedia",
-    className: "left-header",
+    className: "left-header social-media",
     dataClass: "left-content",
     title: "SOCIAL MEDIA",
     detailedList: [

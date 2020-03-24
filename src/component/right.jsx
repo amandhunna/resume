@@ -10,7 +10,8 @@ const data = {
     title: "WORK EXPERIENCE",
     org: [
       {
-        period: "July 2018 - Present: Working with Successive Technologies as an Associate software engineer",
+        period:
+          "July 2018 - Present: Working with Successive Technologies as an Associate software engineer",
         title:
           "Working with Successive Technologies as an Associate software engineer",
         responsibilities: [
@@ -20,7 +21,8 @@ const data = {
         ]
       },
       {
-        period: "2017 ( JUL - OCT): Radical Robots Pvt. Ltd Application development/software maintenance",
+        period:
+          "2017 ( JUL - OCT): Radical Robots Pvt. Ltd Application development/software maintenance",
         title:
           "Radical Robots Pvt. Ltd Application development/software        maintenance",
         responsibilities: [
@@ -152,7 +154,7 @@ export default function right() {
           ))}
         </div>
       </div>
-      <div>
+      <div className="project">
         <h4>{data.project.title}</h4>
         <div className="radio">
           <ul>
