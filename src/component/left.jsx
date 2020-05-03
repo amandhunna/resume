@@ -1,5 +1,6 @@
 import React from "react";
-
+/* import { SketchPicker } from "react-color"; */
+import ColorDropper from "./colorDropper";
 const data = [
   {
     type: "personalInfo",
@@ -86,11 +87,11 @@ export default function Left() {
       <div className="profileImage">
         <img src="./profileImage.jpeg" alt="" />
       </div>
-      {data.map(({ className, dataClass,title, detailedList = [], list = [] }) => (
-        <div>
-          <p className={className}>{title}</p>
-          {detailedList.map(
-            ({ className, onClick = null, type, info }) => (
+      {data.map(
+        ({ className, dataClass, title, detailedList = [], list = [] }) => (
+          <div>
+            <p className={className}>{title}</p>
+            {detailedList.map(({ className, onClick = null, type, info }) => (
               <p className={dataClass}>
                 <strong>{type}</strong>
                 {info.map(item => (
@@ -102,14 +103,15 @@ export default function Left() {
                   </span>
                 ))}
               </p>
-            )
-          )}
-          {list.map(item => (
-            <p>{item}</p>
-          ))}
-        </div>
-      ))}
-
+            ))}
+            {list.map(item => (
+              <p>{item}</p>
+            ))}
+          </div>
+        )
+      )}
+      <ColorDropper />
+     {/*  <SketchPicker /> */}
       <div className="qrCode">
         <img src="./linkdnqr.png" alt="noImageAvailable" />
       </div>
