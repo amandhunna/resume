@@ -65,12 +65,13 @@ const data = {
   skills: {
     title: "SKILLS",
     skillSet: [
-      "Node",
       "React",
-      "MongoDB",
-      "Meteor",
-      "Apollo",
+      "React bootstrap",
       "Git",
+      "MongoDB",
+      "Node",
+      "Apollo",
+      "Meteor",
       "using multiple util libraries",
       "aws lambda"
     ]
@@ -78,10 +79,10 @@ const data = {
   project: {
     title: "PROJECTS",
     list: [
-      "Express: Building the backend of the chat app using express and mongodb",
       "Chat-frontend: Developed a fronted of the chat app and used cometchat-pro for the chat services",
-      "ProfileIntro: Using this I have created this resume. It uses pure html and css. Also implemented this using react",
       "React-demo: Developed a demo app to learn and hands on practice of react basics",
+      "ProfileIntro: Using this I have created this resume. It uses pure html and css. Also implemented this using react",
+      "Express: Building the backend of the chat app using express and mongodb",
       "Score-keeper: Developed this application using meteor (a js full stack framework) and used mongodb for the db",
       "Company management: This project is developed using java (javafx) programming language to demonstrate the use of programming paradigms.",
       "Arduino: The project is built to learn key concepts of IoT and data visualization and to collect data from environment and controlling hardware."

@@ -9,8 +9,8 @@ const data = [
     title: "Personal Information",
     detailedList: [
       { type: "D.O.B.:", info: ["October 05, 1995"] },
-      { type: "Known Languages:", info: ["English, Hindi and Punjabi"] }
-    ]
+      { type: "Known Languages:", info: ["English, Hindi and Punjabi"] },
+    ],
   },
   {
     type: "contact",
@@ -22,9 +22,9 @@ const data = [
       {
         type: "Mail:",
         link: "mailto:amanjotsingh260@gmail.com",
-        info: ["amanjotsingh260@gmail.com"]
-      }
-    ]
+        info: ["amanjotsingh260@gmail.com"],
+      },
+    ],
   },
   {
     type: "activitiesAndHobbies",
@@ -33,9 +33,9 @@ const data = [
     title: "ACTIVITIES/HOBBIES",
     list: [
       "Attending tech talks.",
-      "Sharing coding content on instagram",
-      "Spending time with family and friends."
-    ]
+      "Sharing coding content on Instagram and Medium",
+      "Spending time with family and friends.",
+    ],
   },
   {
     type: "home",
@@ -43,21 +43,35 @@ const data = [
     listClass: "left-header",
     dataClass: "left-content",
     title: "Area, Nationality",
-    list: ["New Delhi, Delhi, India"]
+    list: ["New Delhi, Delhi, India"],
   },
   {
     type: "workSample",
     className: "left-header",
     dataClass: "left-content",
-    title: "WORK SAMPLES",
+    title: "WORK SAMPLES/BLOGS",
     detailedList: [
       {
         className: "clickable",
         info: ["amanjotsinghdhunna"],
         type: "Github:",
-        onClick: () => window.open("https://github.com/amanjotsinghdhunna")
-      }
-    ]
+        onClick: () => window.open("https://github.com/amanjotsinghdhunna"),
+      },
+      {
+        className: "clickable",
+        info: ["@amanjotsingh260"],
+        type: "Medium:",
+        onClick: () => window.open("https://medium.com/@amanjotsingh260"),
+      },
+
+      {
+        className: "clickable",
+        info: ["amanjotsingh260"],
+        type: "Hacker Earth:",
+        onClick: () =>
+          window.open("https://www.hackerearth.com/@amanjotsingh260"),
+      },
+    ],
   },
   {
     type: "socialMedia",
@@ -67,19 +81,26 @@ const data = [
     detailedList: [
       {
         className: "clickable",
+        type: "Instagram:",
+        info: ["singh_amanjot.code"],
+        onClick: () =>
+          window.open("https://www.instagram.com/singh_amanjot.code/"),
+      },
+      {
+        className: "clickable",
         type: "LinkedIn:",
         info: ["amanjot-singh-398731131"],
         onClick: () =>
-          window.open("https://linkedin.com/in/amanjot-singh-398731131")
+          window.open("https://linkedin.com/in/amanjot-singh-398731131"),
       },
       {
-        info: ["or"]
+        info: ["or"],
       },
       {
-        info: ["scan the below code"]
-      }
-    ]
-  }
+        info: ["scan the below code"],
+      },
+    ],
+  },
 ];
 export default function Left() {
   return (
@@ -94,7 +115,7 @@ export default function Left() {
             {detailedList.map(({ className, onClick = null, type, info }) => (
               <p className={dataClass}>
                 <strong>{type}</strong>
-                {info.map(item => (
+                {info.map((item) => (
                   <span
                     className={className}
                     onClick={() => onClick && onClick()}
@@ -104,14 +125,13 @@ export default function Left() {
                 ))}
               </p>
             ))}
-            {list.map(item => (
+            {list.map((item) => (
               <p>{item}</p>
             ))}
           </div>
         )
       )}
-      <ColorDropper />
-     {/*  <SketchPicker /> */}
+      {/*   <ColorDropper /> */}
       <div className="qrCode">
         <img src="./linkdnqr.png" alt="noImageAvailable" />
       </div>
