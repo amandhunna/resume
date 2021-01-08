@@ -1,17 +1,11 @@
 import React from "react";
-/* import { SketchPicker } from "react-color"; */
-import ColorDropper from "./colorDropper";
+
+const qrCode =  <div className="qrCode">
+<img src="./linkdnqr.png" alt="noImageAvailable" />
+</div>
+
+
 const data = [
-  {
-    type: "personalInfo",
-    className: "left-header",
-    dataClass: "left-content",
-    title: "Personal Information",
-    detailedList: [
-      { type: "D.O.B.:", info: ["October 05, 1995"] },
-      { type: "Known Languages:", info: ["English, Hindi and Punjabi"] },
-    ],
-  },
   {
     type: "contact",
     className: "left-header",
@@ -27,14 +21,24 @@ const data = [
     ],
   },
   {
+    type: "personalInfo",
+    className: "left-header",
+    dataClass: "left-content",
+    title: "Personal Information",
+    detailedList: [
+      { type: "D.O.B.:", info: ["October 05, 1995"] },
+      { type: "Known Languages:", info: ["English, Hindi and Punjabi"] },
+    ],
+  },
+  {
     type: "activitiesAndHobbies",
     className: "left-header",
     dataClass: "left-content",
     title: "ACTIVITIES/HOBBIES",
     list: [
-      "Attending tech talks.",
       "Sharing coding content on Instagram and Medium",
       "Spending time with family and friends.",
+      "Attending tech talks.",
     ],
   },
   {
@@ -82,9 +86,9 @@ const data = [
       {
         className: "clickable",
         type: "Instagram:",
-        info: ["singh_amanjot.code"],
+        info: ["amanjotsinghdhunna"],
         onClick: () =>
-          window.open("https://www.instagram.com/singh_amanjot.code/"),
+          window.open("https://www.instagram.com/amanjotsinghdhunna"),
       },
       {
         className: "clickable",
@@ -99,29 +103,51 @@ const data = [
       {
         info: ["scan the below code"],
       },
+      {
+        info: [qrCode],
+      },
+    ],
+  },
+  {
+    type: "portfolio",
+    className: "left-header",
+    dataClass: "left-content",
+    title: "PORTFOLIO",
+    detailedList: [
+      {
+        info: ["To know more about me you can visit my portfolio"],
+      },
+      {
+        className: "clickable",
+        type: "Portfolio:",
+        info: ["amanjotsinghdhunna.netlify.app"],
+        href: "https://amanjotsinghdhunna.netlify.app",
+        onClick: () =>
+          window.open("https://amanjotsinghdhunna.netlify.app"),
+      },
     ],
   },
 ];
 export default function Left() {
   return (
     <div className="left">
-      <div className="profileImage">
+      <div className="profileImage leftDetails">
         <img src="./profileImage.jpeg" alt="" />
       </div>
       {data.map(
         ({ className, dataClass, title, detailedList = [], list = [] }) => (
-          <div>
+          <div className="leftDetails">
             <p className={className}>{title}</p>
             {detailedList.map(({ className, onClick = null, type, info }) => (
               <p className={dataClass}>
                 <strong>{type}</strong>
                 {info.map((item) => (
-                  <span
+                  <a
                     className={className}
                     onClick={() => onClick && onClick()}
                   >
                     {item}
-                  </span>
+                  </a>
                 ))}
               </p>
             ))}
@@ -131,10 +157,6 @@ export default function Left() {
           </div>
         )
       )}
-      {/*   <ColorDropper /> */}
-      <div className="qrCode">
-        <img src="./linkdnqr.png" alt="noImageAvailable" />
       </div>
-    </div>
   );
 }

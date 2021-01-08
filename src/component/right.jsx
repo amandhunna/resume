@@ -13,9 +13,15 @@ const data = {
     org: [
       {
         period:
-          "July 2018 - Present: Working with Successive Technologies as an Associate software engineer",
-        title:
-          "Working with Successive Technologies as an Associate software engineer",
+          "September 2020 - Present: Working with Netmeds.com (Vitalic health private limited) as an Software engineer",
+        responsibilities: [
+          "Build front-end and backend of the apps (including code management of the applications to maintain micro-service architecture)",
+          "Audit apps for performance level",
+        ]
+      },
+      {
+        period:
+          "July 2018 - September 2020: Working with Successive Technologies as an Associate software engineer",
         responsibilities: [
           "Handle front-end and backend of the apps",
           "Discuss and suggest the required changes",
@@ -24,9 +30,7 @@ const data = {
       },
       {
         period:
-          "2017 ( JUL - OCT): Radical Robots Pvt. Ltd Application development/software maintenance",
-        title:
-          "Radical Robots Pvt. Ltd Application development/software        maintenance",
+          "2017 ( Jul - Oct): Radical Robots Pvt. Ltd Application development/software maintenance",
         responsibilities: [
           "Develop new features to the java based app",
           "Maintain the previously build modules"
@@ -66,18 +70,15 @@ const data = {
     title: "SKILLS",
     skillSet: [
       "React",
-      "React bootstrap",
-      "Git",
-      "MongoDB",
       "Node",
-      "Apollo",
-      "Meteor",
+      "Git",
       "using multiple util libraries",
-      "aws lambda"
+      "MongoDB",
+      "Apollo",
     ]
   },
   project: {
-    title: "PROJECTS",
+    title: "PERSONAL PROJECTS",
     list: [
       "Chat-frontend: Developed a fronted of the chat app and used cometchat-pro for the chat services",
       "React-demo: Developed a demo app to learn and hands on practice of react basics",
