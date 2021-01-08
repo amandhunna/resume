@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-overflow: nowrap;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+.objective {
+  margin: 6% 1% !important;
+}
+
+.objective > p {
+  margin: 1%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #fff;
+}
+
+.main {
+  display: flex;
+}
+
+.left {
+  background: #484041;
+  color: #fff;
+  flex-basis: 30%;
+}
+
+.leftDetails {
+  box-shadow: 1px 1px 13px 1px #888888;
+  border-radius: 30px;
+  margin: 25px 10px;
+  padding: 1px;
+}
+
+h1 {
+  color: #629bb8;
+  padding: 0;
+  margin: 0;
+  font-size: 4rem;
+}
+
+.left-header {
+  border-bottom: solid #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2%;
+}
+
+.left-header ~ p {
+  margin: 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 1%;
+  flex-wrap: wrap;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+a {
+  color: #fff;
+}
+
+.right {
+  padding: 5% 1% 1% 1%;
+  flex-basis: 60%;
+}
+
+header {
+  margin: 0% 0% 4% 4%;
+}
+
+.spread {
+  padding: 1%;
+}
+
+.spread > p {
+  margin: 1%;
+}
+
+span {
+  padding-left: 1%;
+  white-space: nowrap;
+}
+
+h1 + h3 {
+  letter-spacing: 5px;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+h4:after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 250px;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid black;
+}
+
+.right > div {
+  margin: 0 0 4% 0;
+}
+
+.profileImage {
+  display: flex;
+}
+.profileImage.leftDetails {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+
+.profileImage > img {  
+  border-radius: 50%;
+}
+
+.period {
+  font-weight: 600;
+}
+
+.radio > ul {
+  margin: 2% 2% 2% 10%;
+}
+
+li {
+  padding: 1%;
+}
+
+.qrCode > img {
+  width: 12rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 6%;
+}
+
+.skillSet {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillSet > span {
+  padding: 1% 3%;
+  margin: 1%;
+  background: #95afc0;
+  color: #FFF;
+}
+
+footer {
+  height: 2.5rem;
+  display: flex;
+  background-color: green;
+}
+
+footer > p {
+  margin: auto;
+  color: #fff;
+}
+.footer-visit {
+  display: none;
+}
+
+@media print {
+  body {
+    transform: scale(1);
+  }
+  .social-media,
+  .project {
+    page-break-before: always;
+  }
+
+  .project {
+    padding-top: 13%;
+  }
+  header {
+    margin: 0% 0% 1% 1%;
+  }
+
+  .left {
+    background: #484041;
+    color: #fff;
+    flex-basis: 40%;
+  }
+
+  .left-header {
+    padding: 4 10%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .period {
+    flex-basis: 25%;
+  }
+}
