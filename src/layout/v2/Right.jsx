@@ -111,7 +111,7 @@ export default function right() {
   return (
     <div className="right">
       <header>
-        <h1>{data.name}</h1>
+        <h1 className="v2-h1">{data.name}</h1>
         <h3>{data.position}</h3>
       </header>
       <div className={data.objective.className}>

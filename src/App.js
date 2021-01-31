@@ -1,14 +1,13 @@
 import React from 'react';
-import { Left } from "./component";
-import { Right } from "./component";
 import { Footer } from "./component";
-
+import V3 from './layout/v3'
+// import V2 from './layout/v2/V2';
 const App = () => {
   return (
     <div>
-      <div className='main'>
-        <Left />
-        <Right />
+      <div className='flex-column'>
+        <V3 />
+        {/* <V2 /> */}
       </div>
       <Footer />
     </div >
