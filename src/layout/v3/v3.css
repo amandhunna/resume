@@ -4,7 +4,6 @@
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  width: 100%;
   padding: 5rem 0 5rem 10rem;
   letter-spacing: 0.4rem;
 }
@@ -24,4 +23,8 @@
   padding: 0 0.5rem;
 }
 .v3-body {
+}
+
+.v3-right {
+  background-color: #ffbe76;
 }

@@ -10,7 +10,7 @@ function V3(props) {
             <Header />
            <div className='v3-body flex'>
              <Left />
-                <Right />
+             <Right />
            </div> 
         </div>
     );

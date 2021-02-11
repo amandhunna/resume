@@ -109,7 +109,7 @@ const data = {
 
 export default function Left() {
   return (
-    <div className="v3-right">
+    <div className="v3-left">
       <div className={data.objective.className}>
         <h4>{data.objective.title}</h4>
         <p>{data.objective.objective}</p>
