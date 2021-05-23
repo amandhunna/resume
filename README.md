@@ -1,2 +1,2 @@
-- Here I create my resume using HTML/JS/CSS using different libraries
+- Here I created my resume using HTML/JS/CSS only
 - switch branches to view
